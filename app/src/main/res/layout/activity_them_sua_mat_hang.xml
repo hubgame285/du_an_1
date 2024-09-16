@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ThemSuaMatHangActivity">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_SP"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_baseline_image_24"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_camera_sp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@android:drawable/ic_menu_camera"/>
+        <ImageButton
+            android:id="@+id/btn_folder_sp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@android:drawable/ic_menu_gallery"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edTenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="18dp"
+            android:textSize="18dp"
+            android:background="@drawable/bogoc_ed_noi_dung"
+            android:hint="Tên mặt hàng"
+            android:focusable="false">
+        </EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:background="#EAEAEA"></View>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edMaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:textSize="18dp"
+            android:background="@drawable/bogoc_ed_noi_dung"
+            android:hint="Mã mặt hàng"
+            android:focusable="false">
+        </EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:background="#EAEAEA"></View>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edSoLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:textSize="18dp"
+            android:background="@drawable/bogoc_ed_noi_dung"
+            android:hint="Số lượng"
+            android:focusable="false">
+        </EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:background="#EAEAEA"></View>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edGiaTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:textSize="18dp"
+            android:background="@drawable/bogoc_ed_noi_dung"
+            android:hint="Giá tiền"
+            android:focusable="false">
+        </EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:background="#EAEAEA"></View>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutNSX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nhà sản xuất"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="18dp"
+            android:textColor="@color/gray"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
+
+        <TextView
+            android:id="@+id/tvNSX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="18dp"
+            android:textColor="@color/mauchu"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/edMota"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:paddingTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="18dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bogoc_ed_noi_dung"
+            android:hint="Mô tả"
+            android:focusable="false">
+        </EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:background="#EAEAEA"></View>
+
+
+    <TextView
+        android:id="@+id/edXoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#ff00"
+        android:textSize="18dp"
+        android:text="Xóa"
+        android:background="@drawable/bogoc_ed_noi_dung"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:focusable="false">
+
+    </TextView>
+
+</LinearLayout>

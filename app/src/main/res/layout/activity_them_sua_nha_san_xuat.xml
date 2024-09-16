@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ThemSuaNhaSanXuatActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edTenNSX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:textSize="18dp"
+            android:background="@drawable/bogoc_ed_noi_dung"
+            android:hint="Tên nhà sản xuất"
+            android:focusable="false">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/edXoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#ff00"
+        android:textSize="18dp"
+        android:text="Xóa"
+        android:background="@drawable/bogoc_ed_noi_dung"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:focusable="false"></EditText>
+
+</LinearLayout>

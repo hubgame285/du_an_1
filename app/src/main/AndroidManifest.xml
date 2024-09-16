@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poly.duan1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/quan_ly_ban_hang"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/quan_ly_ban_hang"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuAn1">
+        <activity android:name=".Activities.DoanhThuActivity2"></activity>
+        <activity android:name=".Activities.DangNhapActivity2" />
+        <activity android:name=".Activities.XemDonHangActivity" />
+        <activity android:name=".Activities.DetailsActivity" />
+        <activity android:name=".Activities.TopActivity" />
+        <activity
+            android:name=".Activities.OnboardingActivity"
+            android:exported="true" />
+        <activity android:name=".Activities.DonHangChiTietActivity" />
+        <activity android:name=".Activities.GioHangActivity" /> <!-- <activity android:name=".Activities.SplashScreenActivity" /> -->
+        <activity android:name=".Activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".Activities.DangNhapActivity"/> -->
+        <activity android:name=".Activities.ThemSuaMatHangActivity" />
+        <activity android:name=".Activities.ThemSuaNhanVienActivity" />
+        <activity android:name=".Activities.ThemSuaKhachHangActivity" />
+        <activity android:name=".Activities.ThemSuaNhaSanXuatActivity" />
+        <activity android:name=".Activities.DoiMatKhauActivity" />
+        <activity android:name=".Activities.KhachHangActivity" />
+        <activity android:name=".Activities.MatHangActivity" />
+        <activity android:name=".Activities.NhanVienActivity" />
+        <activity android:name=".Activities.NhaSanXuatActivity" />
+        <activity android:name=".Activities.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+
+            <!-- <activity android:name=".Activities.MainActivity" > -->
+
+        </activity>
+    </application>
+
+</manifest>

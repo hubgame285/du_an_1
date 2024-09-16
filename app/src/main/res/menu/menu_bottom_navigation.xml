@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checkable="true"
+        android:id="@+id/nav_btt1"
+        android:icon="@drawable/icon_banhang"
+        android:title="Bán hàng"/>
+    <item
+        android:checkable="false"
+        android:id="@+id/nav_btt2"
+        android:icon="@drawable/icon_hoadon"
+        android:title="Hóa đơn"/>
+    <item
+        android:checkable="false"
+        android:id="@+id/nav_btt3"
+        android:icon="@drawable/icon_baocao"
+        android:title="Báo cáo"/>
+    <item
+        android:checkable="false"
+        android:id="@+id/nav_btt4"
+        android:icon="@drawable/icon_them"
+        android:title="Thêm"/>
+
+</menu>
